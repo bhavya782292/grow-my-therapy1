@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Warm sage & cream therapy theme */
+    --background: 40 33% 97%;
+    --foreground: 150 20% 18%;
+    --card: 40 33% 97%;
+    --card-foreground: 150 20% 18%;
+    --popover: 40 33% 97%;
+    --popover-foreground: 150 20% 18%;
+    --primary: 153 25% 36%;
+    --primary-foreground: 40 33% 97%;
+    --secondary: 37 35% 91%;
+    --secondary-foreground: 150 20% 18%;
+    --muted: 37 25% 92%;
+    --muted-foreground: 150 10% 40%;
+    --accent: 28 60% 64%;
+    --accent-foreground: 150 20% 18%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 37 20% 85%;
+    --input: 37 20% 85%;
+    --ring: 153 25% 36%;
+    --radius: 0.5rem;
+    --section-alt: 37 35% 93%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
